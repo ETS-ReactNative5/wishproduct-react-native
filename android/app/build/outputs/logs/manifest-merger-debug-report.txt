@@ -1,0 +1,244 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:1:1-36:12
+INJECTED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:1:1-36:12
+INJECTED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:1:1-36:12
+INJECTED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:1:1-36:12
+MERGED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:1:1-36:12
+MERGED from [:react-native-community_toolbar-android] /Users/nguyen/Site/hoanNV/wishproduct-react-native/node_modules/@react-native-community/toolbar-android/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-community_viewpager] /Users/nguyen/Site/hoanNV/wishproduct-react-native/node_modules/@react-native-community/viewpager/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-splash-screen] /Users/nguyen/Site/hoanNV/wishproduct-react-native/node_modules/react-native-splash-screen/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-vector-icons] /Users/nguyen/Site/hoanNV/wishproduct-react-native/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/nguyen/.gradle/caches/transforms-3/79adccc1d2d722ccd51897d9bf151972/transformed/jetified-react-native-0.61.5/AndroidManifest.xml:2:1-13:12
+MERGED from [org.webkit:android-jsc:r245459] /Users/nguyen/.gradle/caches/transforms-3/8919b4233c79b17fad1871fe2f6fb0f8/transformed/jetified-android-jsc-r245459/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/nguyen/.gradle/caches/transforms-3/003a193a6b03dd6c04f0c97ad9667808/transformed/appcompat-1.0.2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/a774dedb3573dcf409ca28fba26fe5db/transformed/jetified-fresco-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/56b9bcd1ae2ee107ad77074c6838fbaf/transformed/jetified-imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/297af6e7dfe8939c3acbe57ccf844d55/transformed/jetified-drawee-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/a116d7c4b523da6220a5f246dac204ec/transformed/jetified-nativeimagefilters-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/ed18ee62fa8411f1b8addc1fa50c334a/transformed/jetified-imagepipeline-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/2b3cf3ccd7fa3eec91d30a080a025c6a/transformed/jetified-nativeimagetranscoder-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/a17bb0bba8f92a0702508c7604145629/transformed/jetified-imagepipeline-base-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/nguyen/.gradle/caches/transforms-3/372b499c59fa6bba359831713e91d777/transformed/jetified-soloader-0.6.0/AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/1cc1156806f8565dc55c308053c01732/transformed/fragment-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/fef5364fbe2122641ad9358468f27329/transformed/vectordrawable-animated-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/8955151fdddf7186dd268dec80153475/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/a68ff50e117725c5ff980445068f1c28/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/nguyen/.gradle/caches/transforms-3/7a59932f7441a11fae65fc479bf902a8/transformed/vectordrawable-1.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/91d5a720a8ae52056693aa4d947f786d/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/4f59ec17957153c3464368d7e6aaa6b0/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/49b40b19978432a99d3786d3eaac9083/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/28698c6bd8f2ac72e80db35b5a1ef91e/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/de50a22b78f8e71f831b4279e9b69121/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/085f93d0fb889e9dfb891f131e817199/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/35eed425b298f30fc33ffe83e30ece13/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/bc04eb915c3dff55c15a49a82cdc053c/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.1] /Users/nguyen/.gradle/caches/transforms-3/ec0c1b5741ad2b68f7d0e4136cf77318/transformed/core-1.0.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/db1cd1cd531e295f1462bd4ec541d58d/transformed/versionedparcelable-1.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/5cfe8ba5d20229c08df60c452104c16e/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/f00e99997ec354d26eb1eb5bd1e1217c/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/ed579ca3332effd4eddc38b5fc8e9565/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/03cc8b37e6107888d18c64106de8394f/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/299c323d72aaa9d4e7b5ce95d4911097/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/84612a51548004100de23c736517bf69/transformed/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/31e6752199caacc347db21ab79140c21/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/e345602a5e306f793ad308c37facacee/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/f5c2280e6400f87260b86a182a138bf2/transformed/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/2d02da55398a8527d0f1942af42deadf/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/e2697ad9f402e76cf56c8e91c44a03c6/transformed/jetified-fbcore-2.0.0/AndroidManifest.xml:2:1-9:12
+INJECTED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+INJECTED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+INJECTED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+	package
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:2:3-42
+		INJECTED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:2:3-42
+		INJECTED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/debug/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:1:1-36:12
+		INJECTED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/debug/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/debug/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:1:1-36:12
+		INJECTED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/debug/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:4:22-64
+application
+ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:6:5-34:19
+MERGED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:6:5-34:19
+MERGED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:6:5-34:19
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/nguyen/.gradle/caches/transforms-3/79adccc1d2d722ccd51897d9bf151972/transformed/jetified-react-native-0.61.5/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/nguyen/.gradle/caches/transforms-3/79adccc1d2d722ccd51897d9bf151972/transformed/jetified-react-native-0.61.5/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/nguyen/.gradle/caches/transforms-3/372b499c59fa6bba359831713e91d777/transformed/jetified-soloader-0.6.0/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/nguyen/.gradle/caches/transforms-3/372b499c59fa6bba359831713e91d777/transformed/jetified-soloader-0.6.0/AndroidManifest.xml:11:5-20
+MERGED from [androidx.core:core:1.0.1] /Users/nguyen/.gradle/caches/transforms-3/ec0c1b5741ad2b68f7d0e4136cf77318/transformed/core-1.0.1/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.1] /Users/nguyen/.gradle/caches/transforms-3/ec0c1b5741ad2b68f7d0e4136cf77318/transformed/core-1.0.1/AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/db1cd1cd531e295f1462bd4ec541d58d/transformed/versionedparcelable-1.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/db1cd1cd531e295f1462bd4ec541d58d/transformed/versionedparcelable-1.0.0/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.1] /Users/nguyen/.gradle/caches/transforms-3/ec0c1b5741ad2b68f7d0e4136cf77318/transformed/core-1.0.1/AndroidManifest.xml:22:18-86
+	android:label
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:8:7-39
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:8:7-39
+	tools:ignore
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/debug/AndroidManifest.xml:7:75-114
+	android:roundIcon
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:10:7-46
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:10:7-46
+	tools:targetApi
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/debug/AndroidManifest.xml:7:54-74
+	android:icon
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:9:7-41
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:9:7-41
+	android:allowBackup
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:11:7-34
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:11:7-34
+	android:theme
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:12:7-38
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:12:7-38
+	android:usesCleartextTraffic
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/debug/AndroidManifest.xml:7:18-53
+	android:name
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:7:7-38
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:7:7-38
+activity#com.recraftreactnativebaseapp.SplashActivity
+ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:13:7-21:18
+	android:label
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:16:9-41
+	android:theme
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:15:9-43
+	android:name
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:14:9-39
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:17:9-20:25
+action#android.intent.action.MAIN
+ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:18:11-63
+	android:name
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:18:19-60
+category#android.intent.category.LAUNCHER
+ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:19:11-71
+	android:name
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:19:21-68
+activity#com.recraftreactnativebaseapp.MainActivity
+ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:22:7-32:18
+	android:label
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:24:9-41
+	android:windowSoftInputMode
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:26:9-51
+	android:exported
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:27:9-32
+	android:configChanges
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:25:9-79
+	android:name
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:23:9-37
+intent-filter#action:name:android.intent.action.MAIN
+ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:28:9-31:25
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:33:7-84
+	android:name
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml:33:17-81
+uses-sdk
+INJECTED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-community_toolbar-android] /Users/nguyen/Site/hoanNV/wishproduct-react-native/node_modules/@react-native-community/toolbar-android/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_toolbar-android] /Users/nguyen/Site/hoanNV/wishproduct-react-native/node_modules/@react-native-community/toolbar-android/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_viewpager] /Users/nguyen/Site/hoanNV/wishproduct-react-native/node_modules/@react-native-community/viewpager/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_viewpager] /Users/nguyen/Site/hoanNV/wishproduct-react-native/node_modules/@react-native-community/viewpager/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-splash-screen] /Users/nguyen/Site/hoanNV/wishproduct-react-native/node_modules/react-native-splash-screen/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-splash-screen] /Users/nguyen/Site/hoanNV/wishproduct-react-native/node_modules/react-native-splash-screen/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-vector-icons] /Users/nguyen/Site/hoanNV/wishproduct-react-native/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-vector-icons] /Users/nguyen/Site/hoanNV/wishproduct-react-native/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/nguyen/.gradle/caches/transforms-3/79adccc1d2d722ccd51897d9bf151972/transformed/jetified-react-native-0.61.5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/nguyen/.gradle/caches/transforms-3/79adccc1d2d722ccd51897d9bf151972/transformed/jetified-react-native-0.61.5/AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] /Users/nguyen/.gradle/caches/transforms-3/8919b4233c79b17fad1871fe2f6fb0f8/transformed/jetified-android-jsc-r245459/AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] /Users/nguyen/.gradle/caches/transforms-3/8919b4233c79b17fad1871fe2f6fb0f8/transformed/jetified-android-jsc-r245459/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/nguyen/.gradle/caches/transforms-3/003a193a6b03dd6c04f0c97ad9667808/transformed/appcompat-1.0.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/nguyen/.gradle/caches/transforms-3/003a193a6b03dd6c04f0c97ad9667808/transformed/appcompat-1.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/a774dedb3573dcf409ca28fba26fe5db/transformed/jetified-fresco-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/a774dedb3573dcf409ca28fba26fe5db/transformed/jetified-fresco-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/56b9bcd1ae2ee107ad77074c6838fbaf/transformed/jetified-imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/56b9bcd1ae2ee107ad77074c6838fbaf/transformed/jetified-imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/297af6e7dfe8939c3acbe57ccf844d55/transformed/jetified-drawee-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/297af6e7dfe8939c3acbe57ccf844d55/transformed/jetified-drawee-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/a116d7c4b523da6220a5f246dac204ec/transformed/jetified-nativeimagefilters-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/a116d7c4b523da6220a5f246dac204ec/transformed/jetified-nativeimagefilters-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/ed18ee62fa8411f1b8addc1fa50c334a/transformed/jetified-imagepipeline-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/ed18ee62fa8411f1b8addc1fa50c334a/transformed/jetified-imagepipeline-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/2b3cf3ccd7fa3eec91d30a080a025c6a/transformed/jetified-nativeimagetranscoder-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/2b3cf3ccd7fa3eec91d30a080a025c6a/transformed/jetified-nativeimagetranscoder-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/a17bb0bba8f92a0702508c7604145629/transformed/jetified-imagepipeline-base-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/a17bb0bba8f92a0702508c7604145629/transformed/jetified-imagepipeline-base-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/nguyen/.gradle/caches/transforms-3/372b499c59fa6bba359831713e91d777/transformed/jetified-soloader-0.6.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/nguyen/.gradle/caches/transforms-3/372b499c59fa6bba359831713e91d777/transformed/jetified-soloader-0.6.0/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/1cc1156806f8565dc55c308053c01732/transformed/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/1cc1156806f8565dc55c308053c01732/transformed/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/fef5364fbe2122641ad9358468f27329/transformed/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/fef5364fbe2122641ad9358468f27329/transformed/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/8955151fdddf7186dd268dec80153475/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/8955151fdddf7186dd268dec80153475/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/a68ff50e117725c5ff980445068f1c28/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/a68ff50e117725c5ff980445068f1c28/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/nguyen/.gradle/caches/transforms-3/7a59932f7441a11fae65fc479bf902a8/transformed/vectordrawable-1.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/nguyen/.gradle/caches/transforms-3/7a59932f7441a11fae65fc479bf902a8/transformed/vectordrawable-1.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/91d5a720a8ae52056693aa4d947f786d/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/91d5a720a8ae52056693aa4d947f786d/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/4f59ec17957153c3464368d7e6aaa6b0/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/4f59ec17957153c3464368d7e6aaa6b0/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/49b40b19978432a99d3786d3eaac9083/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/49b40b19978432a99d3786d3eaac9083/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/28698c6bd8f2ac72e80db35b5a1ef91e/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/28698c6bd8f2ac72e80db35b5a1ef91e/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/de50a22b78f8e71f831b4279e9b69121/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/de50a22b78f8e71f831b4279e9b69121/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/085f93d0fb889e9dfb891f131e817199/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/085f93d0fb889e9dfb891f131e817199/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/35eed425b298f30fc33ffe83e30ece13/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/35eed425b298f30fc33ffe83e30ece13/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/bc04eb915c3dff55c15a49a82cdc053c/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/bc04eb915c3dff55c15a49a82cdc053c/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] /Users/nguyen/.gradle/caches/transforms-3/ec0c1b5741ad2b68f7d0e4136cf77318/transformed/core-1.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] /Users/nguyen/.gradle/caches/transforms-3/ec0c1b5741ad2b68f7d0e4136cf77318/transformed/core-1.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/db1cd1cd531e295f1462bd4ec541d58d/transformed/versionedparcelable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/db1cd1cd531e295f1462bd4ec541d58d/transformed/versionedparcelable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/5cfe8ba5d20229c08df60c452104c16e/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/5cfe8ba5d20229c08df60c452104c16e/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/f00e99997ec354d26eb1eb5bd1e1217c/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/f00e99997ec354d26eb1eb5bd1e1217c/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/ed579ca3332effd4eddc38b5fc8e9565/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/ed579ca3332effd4eddc38b5fc8e9565/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/03cc8b37e6107888d18c64106de8394f/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/03cc8b37e6107888d18c64106de8394f/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/299c323d72aaa9d4e7b5ce95d4911097/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/299c323d72aaa9d4e7b5ce95d4911097/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/84612a51548004100de23c736517bf69/transformed/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/84612a51548004100de23c736517bf69/transformed/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/31e6752199caacc347db21ab79140c21/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/31e6752199caacc347db21ab79140c21/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/e345602a5e306f793ad308c37facacee/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/e345602a5e306f793ad308c37facacee/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/f5c2280e6400f87260b86a182a138bf2/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/f5c2280e6400f87260b86a182a138bf2/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/2d02da55398a8527d0f1942af42deadf/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/nguyen/.gradle/caches/transforms-3/2d02da55398a8527d0f1942af42deadf/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/e2697ad9f402e76cf56c8e91c44a03c6/transformed/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/nguyen/.gradle/caches/transforms-3/e2697ad9f402e76cf56c8e91c44a03c6/transformed/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
+INJECTED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/debug/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/debug/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/debug/AndroidManifest.xml
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/debug/AndroidManifest.xml:5:5-77
+	android:name
+		ADDED from /Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/src/debug/AndroidManifest.xml:5:22-75

@@ -1,0 +1,4 @@
+#Sun Mar 13 22:06:41 ICT 2022
+base.0=/Users/nguyen/Site/hoanNV/wishproduct-react-native/android/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
