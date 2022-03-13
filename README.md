@@ -93,3 +93,10 @@ Contributors
 Sponsors
 =======
 [<img src="http://www.recraftstudio.com/images/logo.png" alt="Recraft Relic Private Limited" width="50"/>](http://www.recraftrelic.com)
+
+## Export ANDROID_HOME
+```javascript
+export ANDROID_HOME=/Users/nguyen/Library/Android/sdk
+export PATH=$ANDROID_HOME/platform-tools:$PATH
+export PATH=$ANDROID_HOME/tools:$PATH
+```
