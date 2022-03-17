@@ -1,12 +1,10 @@
-import { createStore, combineReducers } from "redux";
-import configReducer from "./reducers/config";
+import {createStore, combineReducers} from 'redux';
+import configReducer from './reducers/config';
 
 const reducer = combineReducers({
-    configReducer
-})
+  configReducer,
+});
 
-const store = createStore(
-    reducer
-)
+const store = createStore(reducer);
 
 export default store;

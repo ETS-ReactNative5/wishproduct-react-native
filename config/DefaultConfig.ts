@@ -25,6 +25,9 @@ export interface HomePageType {
   labelViewAll: string,
   labelFashion: string,
   labelSave: string,
+  labelHotTrend: string,
+  labeBestSell: string,
+  labeBrandLogo: string,
 }
 
 export interface advertisementType {
@@ -44,12 +47,16 @@ export interface AppConstants {
 
 export interface ApplicationConfig {
     constants?: AppConstants
+    API_URL: string
+    IMG_DEFAULT: string
 }
 
 // @ts-ignore
 const Logo = require("../images/recraftshoping-app-logo2.png")
 
 export const defaultConfig: ApplicationConfig = {
+    API_URL: 'https://api.giathucpham.com',
+    IMG_DEFAULT: 'https://via.placeholder.com/360x459.png',
     constants: {
       selectedTheme: ThemeKey.light,
       selectedLanguage: LanguageKey.en,
@@ -60,6 +67,9 @@ export const defaultConfig: ApplicationConfig = {
         labelViewAll: "View All",
         labelFashion: "FASHION",
         labelSave: "SALE",
+        labelHotTrend: "Sản phẩm trend",
+        labeBestSell: "Sản phẩm bestsell",
+        labeBrandLogo: "Thương hiệu hàng đầu Việt Nam",
       },
       advertisement: {
         label1: "SHOP",

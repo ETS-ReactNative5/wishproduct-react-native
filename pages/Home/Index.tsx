@@ -1,84 +1,199 @@
-import React from 'react';
-import { RouteComponentProps } from 'react-router-native';
-import { Dispatch } from 'redux';
-import { View, ViewStyle, StyleSheet, TextStyle, ImageBackground, Text } from 'react-native';
-import { AppConstants, AppTheme } from '../../config/DefaultConfig';
+import React, {useState} from 'react';
+import {RouteComponentProps} from 'react-router-native';
+import {Dispatch} from 'redux';
+import {View, ViewStyle, StyleSheet, TextStyle, Image, ImageBackground, Text, ScrollView, SafeAreaView} from 'react-native';
+import {AppConstants, AppTheme} from '../../config/DefaultConfig';
 import useConstants from '../../hooks/useConstants';
 import RoundButton from '../../components/Base/RoundButton';
 import FooterNavigation from '../Footer/Index';
-import useTheme from "../../hooks/useTheme";
-import HomePageProducts from './HomePageProducts';
-import { AppLanguage } from '../../config/languages';
+import useTheme from '../../hooks/useTheme';
+import {AppLanguage} from '../../config/languages';
 import useLanguage from '../../hooks/useLanguage';
+import HomeTrendProduct from './HomeTrendProduct';
+import apiService from '../../services/apiService';
+import appService from '../../services/appService';
+import {useEffect} from 'react';
+import HomeBestSellProduct from './HomeBestSellProduct';
+import HomeBrandLogo from './HomeBrandLogo';
 
 interface Props extends RouteComponentProps {
-    dispatch: Dispatch,
-    history
+  dispatch: Dispatch;
+  history;
 }
 
-// @ts-ignore
-const ImagePath = require("../../images/shopping.jpg")
+const Home: React.FunctionComponent<Props> = ({history}: Props) => {
+  const constants: AppConstants = useConstants();
+  const theme: AppTheme = useTheme();
+  const language: AppLanguage = useLanguage();
+  const [listTrendItems, setListTrendItems] = useState([]);
+  const [listBestSellItems, setListBestSellItems] = useState([]);
+  const [listBrands, setListBrands] = useState([]);
 
-const Home: React.FunctionComponent<Props> = ({
-    history
-}: Props) => {
-    const constants: AppConstants = useConstants();
-    const theme: AppTheme = useTheme();
-    const language: AppLanguage = useLanguage();
+  useEffect(() => {
+    Promise.all([
+      apiService.get('/v1/homepage/items/feature?page=0&limit=10'),
+      apiService.get('/v1/homepage/items/body?page=0&limit=10'),
+      apiService.get('/v1/stores?page=0&limit=30'),
+    ]).then(result=>{
+      let [_resTrenditems, _bestsell, _brands] = result;
+      let resTrenditems = appService.getResultApiPaging(_resTrenditems);
+      let trendingItems = resTrenditems.items.map(r => {
+        r = appService.parseProductPrice(r);
+        r = appService.parseThumbnails(r);
+        return r;
+      });
+      setListTrendItems(trendingItems);
+  
+      let resBestSell = appService.getResultApiPaging(_bestsell);
+      let bestSellItems = resBestSell.items.map(r => {
+        r = appService.parseProductPrice(r);
+        r = appService.parseThumbnails(r);
+        return r;
+      });
+      setListBestSellItems(bestSellItems);
+  
+      let resBrands = appService.getResultApiPaging(_brands);
+      let brands = resBrands.items.map(r => {
+        r = appService.parseProductPrice(r);
+        r = appService.parseThumbnails(r);
+        return r;
+      });
+      setListBrands(brands);
+    });
+  }, []);
 
-    const gotoProducts = () => {
-        history.push('/shopping')
-    }
- 
-    return (
-        <View style={style.mainContainer}>
-            <View style={style.fistView}>
-                <ImageBackground source={ImagePath} style={{ width: '100%', height: '100%' }} >
-                    <View style={style.fistViewContent}>
-                        <Text style={[style.fistViewText, { color: theme.labelBgColor }]}>{constants.homePage.labelFashion}</Text>
-                        <Text style={[style.fistViewText, { color: theme.labelBgColor }]}>{constants.homePage.labelSave}</Text>
-                        <RoundButton buttonStyle={[style.fistViewButton, { backgroundColor: theme.dangerColor, borderColor: theme.dangerColor }]} labelStyle={{ fontSize: 17, color: theme.labelBgColor }} label={language.labelCheck} onPress={gotoProducts} />
+  const gotoProducts = () => {
+    history.push('/shopping');
+  };
+  const gotoViewAll = () => {
+    history.push('/shopping');
+  };
+
+  const gotoProductDetails = () => {
+    history.push('/productDetails');
+  };
+
+  return (
+    <SafeAreaView
+      style={{
+        flex: 1,
+        paddingTop: 0,
+        margin: 0,
+      }}>
+      <ScrollView style={style.secondView}>
+        <View style={style.newItemList}>
+          <View style={style.newItemListLabel}>
+            <Text style={[style.leftLabel, {color: theme.labelBgColor}]}>{constants.homePage.labelHotTrend}</Text>
+            <Text style={[style.rightLabel, {color: theme.activeColor}]} onPress={gotoViewAll}>
+              {constants.homePage.labelViewAll}
+            </Text>
+          </View>
+          <View style={style.newItemBox}>
+            {listTrendItems && listTrendItems.length > 0 ? (
+              <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+                {listTrendItems.map((item, idx) => {
+                  return (
+                    <View key={item.id} style={{zIndex: 9}}>
+                      <HomeTrendProduct item={item} goToDetails={gotoProductDetails} />
                     </View>
-                </ImageBackground>
-            </View>
-            <HomePageProducts history={history}/>
-            <FooterNavigation history={history} />
+                  );
+                })}
+              </ScrollView>
+            ) : null}
+          </View>
         </View>
-    )
+
+        <View style={style.newItemList}>
+          <View style={style.newItemListLabel}>
+            <Text style={[style.leftLabel, {color: theme.labelBgColor}]}>{constants.homePage.labeBestSell}</Text>
+            <Text style={[style.rightLabel, {color: theme.activeColor}]} onPress={gotoViewAll}>
+              {constants.homePage.labelViewAll}
+            </Text>
+          </View>
+          <View style={style.newItemBox}>
+            {listBestSellItems && listBestSellItems.length > 0 ? (
+              <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+                {listBestSellItems.map((item, idx) => {
+                  return (
+                    <View key={item.id} style={{zIndex: 9}}>
+                      <HomeBestSellProduct item={item} goToDetails={gotoProductDetails} />
+                    </View>
+                  );
+                })}
+              </ScrollView>
+            ) : null}
+          </View>
+        </View>
+
+        <View style={style.newItemList}>
+          <View style={style.newItemListLabel}>
+            <Text style={[style.leftLabel, {color: theme.labelBgColor}]}>{constants.homePage.labeBrandLogo}</Text>
+          </View>
+          <View style={style.newItemBox}>
+            {listBrands && listBrands.length > 0 ? (
+              <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+                {listBrands.map((item, idx) => {
+                  return (
+                    <View key={item.id} style={{zIndex: 9}}>
+                      <HomeBrandLogo item={item} goToDetails={null} />
+                    </View>
+                  );
+                })}
+              </ScrollView>
+            ) : null}
+          </View>
+        </View>
+      </ScrollView>
+      <FooterNavigation history={history} />
+    </SafeAreaView>
+  );
 };
 
 export default Home;
 
-interface Style {
-    mainContainer: ViewStyle;
-    fistView: ViewStyle;
-    fistViewButton: ViewStyle;
-    fistViewText: TextStyle;
-    fistViewContent: ViewStyle;
-}
+const style: any = StyleSheet.create<any>({
+  mainContainer: {
+    padding: 0,
+    margin: 0,
+    flex: 1,
+  },
+  secondView: {
+    // flex: 1,
+    // justifyContent: 'flex-start',
+    marginHorizontal: 0,
+  },
 
-const style: Style = StyleSheet.create<Style>({
-    mainContainer: {
-        padding: 0,
-        margin: 0,
-        flex: 1,
-    },
-    fistView: {
-        flex: 3,
-        height: '100%',
-    },
-    fistViewText: {
-        fontSize: 35,
-        fontWeight: '900',
-    },
-    fistViewButton: {
-        maxWidth: 180,
-        textAlign: 'center',
-        minWidth: 230,
-    },
-    fistViewContent: {
-        position: 'absolute',
-        bottom: 30,
-        left: 20,
-    },
+  newItemList: {
+    flex: 1,
+    paddingLeft: 10,
+    paddingRight: 10,
+    paddingBottom: 10,
+  },
+  newItemListLabel: {
+    flexDirection: 'row',
+  },
+  leftLabel: {
+    flex: 1,
+    fontSize: 16,
+    fontWeight: '700',
+    textAlign: 'left',
+    textTransform: 'capitalize',
+    paddingLeft: 5,
+  },
+  rightLabel: {
+    flex: 1,
+    textAlign: 'right',
+    justifyContent: 'center',
+    paddingTop: 10,
+    paddingRight: 5,
+  },
+  newItemBox: {
+    flex: 1,
+    flexDirection: 'row',
+    fontSize: 25,
+    fontWeight: '900',
+    marginTop: 5,
+    borderRadius: 0,
+    // overflow: 'hidden',
+  },
 });
