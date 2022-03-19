@@ -1,0 +1,2 @@
+-env.js to use define config for app
+-env.[ENV].js to use overwrite env.js when dev or build APP
