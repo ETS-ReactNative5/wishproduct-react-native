@@ -10,7 +10,7 @@
     "android": "NODE_ENV=development node build_replace_env.js   && react-native run-android",
     "logandroid": "NODE_ENV=development node build_replace_env.js   && react-native log-android",
     "zipApk": "zip -j ./android/app/build/outputs/apk/release/app-release.apk.zip         ./android/app/build/outputs/apk/release/app-release.apk ",
-    "uploadApk": "scp -i /Users/nguyentvk/Site/rsa_key/hnv-aws-blue-printer.pem    -r        ./android/app/build/outputs/apk/release/*      ec2-user@blueprinter.online:/app/blueprinter.online/coreui_blue_project/build/assets  ",
+    "uploadApk": "scp -i /Users/nguyen/Site/rsa_key/hnv-aws-blue-printer.pem    -r        ./android/app/build/outputs/apk/release/*      ec2-user@blueprinter.online:/app/blueprinter.online/coreui_blue_project/build/assets  ",
     "upload": "npm run zipApk      &&        npm run uploadApk    "
   },
   "dependencies": {
