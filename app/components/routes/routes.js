@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import { Scene, Router } from 'react-native-router-flux';
 import { connect, Provider } from 'react-redux';
-import { Actions } from 'react-native-router-flux';
+import { Actions, Drawer } from 'react-native-router-flux';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { Image, Platform, StyleSheet, Text, TouchableOpacity, View, ToastAndroid } from 'react-native';
 
 // include
 import navBarCustom from './../../components/navBarCustom/navBarCustom';
 import IconsGiaoHang from './icon_tab_bottom_nav';
+import SideBarMenu from '../sidebarMenuCustom/SideBarMenu';
 
 // page
 import HomeModuleContainer from './../../components/home/home_modules';
@@ -23,11 +24,11 @@ import ScanCompletePhieuGHContainer from './../../components/giaoHang/scanComple
 
 import LoginContainer from './../../components/auth/LoginForm';
 import SignupContainer from './../../components/auth/SignupForm';
-
 import profileContainer from './../../components/profile/profile';
 
 //redux
 import configureStore from './../../store/index';
+
 
 export const store = configureStore();
 const RouterRedux = connect()(Router);
@@ -47,37 +48,54 @@ export default class Routes extends React.Component {
       <Provider store={store}>
         <RouterRedux>
           <Scene key="root">
-            {/* Route not auth */}
-            <Scene key="login" navBar={navBarCustom} hideNavBar={false} component={LoginContainer} title="Đăng nhập" initial={true} />
+
+            {/* <Scene tabs={true}  key="home" showLabel={false} navBar={navBarCustom} hideNavBar={false} title="Trang Chủ" initial={true}>
+              <Scene key="home_default" component={HomeModuleContainer} hideNavBar={true} title="Home" initial={true} icon={IconsGiaoHang.IconTabHome} />
+              <Scene key="home_filter" component={DanhSachPhieuGHContainer} hideNavBar={true} title="Filter" icon={IconsGiaoHang.IconTabFilter} />
+              <Scene key="home_tai_khoan" component={DanhSachPhieuGHContainer} hideNavBar={true} title="Account" icon={IconsGiaoHang.IconTabAccount} />
+              <Scene key="home_tim_kiem" component={ScanCompletePhieuGHContainer} hideNavBar={true} title="Search" icon={IconsGiaoHang.IconTabSearch} />
+            </Scene> */}
+
+
+            <Scene
+              key="drawerMenu"
+              drawer={true}
+              hideNavBar={true}
+              drawerWidth={300}
+              drawerPosition="left"
+              contentComponent={SideBarMenu}
+              // drawerImage={Images.menuIcon}
+              initial={true}
+              > 
+              <Scene key="home" showLabel={false} tabs={true} navBar={navBarCustom} hideNavBar={false} title="Trang Chủ" initial={true}>
+                <Scene key="home_default" component={HomeModuleContainer} hideNavBar={true} title="Home" initial={true} icon={IconsGiaoHang.IconTabHome} />
+                <Scene key="home_filter" component={DanhSachPhieuGHContainer} hideNavBar={true} title="Filter" icon={IconsGiaoHang.IconTabFilter} />
+                <Scene key="home_tai_khoan" component={DanhSachPhieuGHContainer} hideNavBar={true} title="Account" icon={IconsGiaoHang.IconTabAccount} />
+                <Scene key="home_tim_kiem" component={ScanCompletePhieuGHContainer} hideNavBar={true} title="Search" icon={IconsGiaoHang.IconTabSearch} />
+              </Scene>
+            </Scene>
+
+
+            {/* <Scene key="login" navBar={navBarCustom} hideNavBar={false} component={LoginContainer} title="Đăng nhập" initial={true} />
             <Scene key="signup" component={SignupContainer} title="Signup" />
             <Scene key="profile" navBar={navBarCustom} hideNavBar={false} component={profileContainer} title="Thông tin" />
-
             <Scene key="home" navBar={navBarCustom} hideNavBar={false} component={HomeModuleContainer} title="Trang Chủ" />
+            */}
 
-            <Scene key="kho_nhapKhoCuonChinh" navBar={navBarCustom} hideNavBar={false} component={NhapKhoChinhContainer} title="Kho Cuộn Chính" />
-            <Scene key="kho_nhapKhoCuonAo" navBar={navBarCustom} hideNavBar={false} component={NhapKhoAoContainer} title="Kho Cuộn Ảo" />
-
-            <Scene key="kho_nhapKhoKhacChinh" navBar={navBarCustom} hideNavBar={false} component={NhapKhoKhacChinhContainer} title="Kho Khác Chính" />
-            <Scene key="kho_nhapKhoKhacAo" navBar={navBarCustom} hideNavBar={false} component={NhapKhoKhacAoContainer} title="Kho Khác Ảo" />
-
-            <Scene key="kho_nhapKhoThanhPham" navBar={navBarCustom} hideNavBar={false} component={NhapKhoThanhPhamContainer} title="Kho Thành Phẩm" />
-
-            {/* <Scene key="kho_giaoHang" navBar={navBarCustom} hideNavBar={false} component={GiaoHangContainer} title="Giao Hàng" /> */}
             {/* GIAO HANG TAB */}
-            <Scene key="kho_giaoHang" showLabel={false} tabs={true} navBar={navBarCustom} hideNavBar={false} title="Giao Hàng">
+            <Scene tabs={true} key="kho_giaoHang" showLabel={false} navBar={navBarCustom} hideNavBar={false} title="Giao Hàng">
               <Scene key="kho_giaoHang_taoPhieuGiaoHang" component={TaoPhieuGHContainer} hideNavBar={true} title="Tạo Hành Trình" initial={true} icon={TaoPhieuGiaoHangTabIcon} />
               <Scene key="kho_giaoHang_danhSachPhieu" component={DanhSachPhieuGHContainer} hideNavBar={true} title="Danh sách" icon={DanhSachPhieuGiaoHangTabIcon} />
               <Scene key="home_giaoHang_quetGiaoXong" component={ScanCompletePhieuGHContainer} hideNavBar={true} title={'Quét'} icon={QuetGiaoXongTabIcon} />
             </Scene>
 
             {/* TABs Containner */}
-            {/* <Scene key='home' showLabel={false} tabs={true} navBar={navBarCustom} hideNavBar={false} title='Trang Chủ'>
+            {/* <Scene tabs={true} key='home' showLabel={false} navBar={navBarCustom} hideNavBar={false} title='Trang Chủ'>
               <Scene key='home_nhapKho'    component={nhapKhoContainer} hideNavBar={true} title='Nhap Kho' initial={true} icon={NhapKhoTabIcon} />
               <Scene key='home_nhapHang'   component={CounterContainer}  hideNavBar={true} title='Nhap Hang' icon={NhapHangTabIcon} />
               <Scene key='home_giaoHang'   component={TodolistContainer}  hideNavBar={true} title={'Giao Hang'} icon={GiaoHangTabIcon} />
             </Scene> */}
 
-            {/* <Scene key="camera" back={true} backButtonTintColor={'#000000'} component={nhapKhoContainer} title="Scan BarCode" /> */}
           </Scene>
         </RouterRedux>
       </Provider>

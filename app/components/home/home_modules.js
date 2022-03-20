@@ -38,23 +38,13 @@ class HomeModules extends Component {
         })
       }
     }).catch(e=>{
-      console.error(e);
-      ToastAndroid.show(`ERROR get list modules`+ JSON.stringify(e), ToastAndroid.LONG);
+      console.log(`call api /app/v1/modules`, e);
+      ToastAndroid.show(`ERROR call api /app/v1/modules: get list modules`+ JSON.stringify(e), ToastAndroid.LONG);
     })
   }
 
   render() {
     let {listModules} = this.state;
-    // if(listModules.length > 0){
-    //   let find = _.find(listModules,{key:'mobile.kho.kho-thanh-pham'});
-    //   if(!find){
-    //     listModules.push({
-    //       key:'mobile.kho.kho-thanh-pham',
-    //       title: 'Nhập kho thành phẩm',
-    //       value: 'Nhập kho thành phẩm',
-    //     })
-    //   }
-    // }
     return (
       <View style={{...styles.container,justifyContent: 'center'}}>
           {listModules.length > 0

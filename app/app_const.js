@@ -1,4 +1,5 @@
 export const APP_VERSION_CONST = 116;
+export const ICON_FONT_SIZE = 25;
 export const MODULE_DEFINE = {
   //  vat tu cuon
   'mobile.kho.kho-cuon-ao': {
