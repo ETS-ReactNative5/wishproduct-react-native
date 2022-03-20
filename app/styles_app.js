@@ -18,8 +18,8 @@ export const APP_STYLES = StyleSheet.create({
     justifyContent: 'center',
     height: 40,
     margin: 10,
-    marginTop:5,
-    marginBottom:5,
+    marginTop: 5,
+    marginBottom: 5,
     borderRadius: 5,
     padding: 3,
     backgroundColor: '#88cc88'
@@ -43,13 +43,13 @@ export const APP_STYLES = StyleSheet.create({
   scrollView: {
     backgroundColor: '#2299ec'
   },
-  ngSelectStyle:{
-    marginLeft:10,
-    marginRight:10,
-    marginTop:5,
-    marginBottom:5,
-    paddingTop:5,
-    paddingBottom:5,
-    fontSize:12,
-  },
+  ngSelectStyle: {
+    marginLeft: 10,
+    marginRight: 10,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    fontSize: 12
+  }
 });

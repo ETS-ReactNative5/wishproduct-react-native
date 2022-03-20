@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { styles } from './styles';
 import { Scene, Router } from 'react-native-router-flux';
 import { connect, Provider } from 'react-redux';
 import { Actions } from 'react-native-router-flux';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import { Image, Platform, StyleSheet, Text, TouchableOpacity, View,ToastAndroid } from 'react-native';
+import { Image, Platform, StyleSheet, Text, TouchableOpacity, View, ToastAndroid } from 'react-native';
 
 // include
 import navBarCustom from './../../components/navBarCustom/navBarCustom';
+import IconsGiaoHang from './icon_tab_bottom_nav';
 
 // page
 import HomeModuleContainer from './../../components/home/home_modules';
@@ -32,77 +32,21 @@ import configureStore from './../../store/index';
 export const store = configureStore();
 const RouterRedux = connect()(Router);
 
-let textFocus = 'blue';
-let textNotFocus = '#999999';
-let bgFocus = "#d1e5ff";
-let bgNotFocus = "none";
-
-let getTabIconStyle = (props)=>{
-  let textColor = props.focused ? textFocus : textNotFocus;
-  let borderColor = props.focused ? textFocus : textNotFocus;
-  let backgroundColor = props.focused ? bgFocus : bgNotFocus;
-  return {
-    flex: 1, 
-    flexDirection:'column', 
-    alignItems:'center', 
-    justifyContent:'center', 
-    borderTopColor: borderColor, 
-    borderTopWidth:4, 
-    padding:20,
-    backgroundColor,
-    textColor,
-  }
-}
-
-const TaoPhieuGiaoHangTabIcon = (props) => {
-  let styles = getTabIconStyle(props);
-  return (
-  <View style={getTabIconStyle(props)}>
-    <Icon name="bookmark-plus" size={25} color={styles.textColor} />
-    <Text style={{color: styles.textColor}}>Tạo H/Trình</Text>
-  </View>
-  );
-}
-
-
-const DanhSachPhieuGiaoHangTabIcon = (props) => {
-  let styles = getTabIconStyle(props);
-  return (
-  <View style={{...styles}}>
-    <Icon name="book-open" size={25} color={styles.textColor} />
-    <Text style={{color: styles.textColor}}>Danh sách</Text>
-  </View>
-  );
-}
-
-const QuetGiaoXongTabIcon = (props) => {
-  let styles = getTabIconStyle(props);
-  return (
-  <View style={styles}>
-    <Icon name="qrcode" size={25} color={styles.textColor} />
-    <Text style={{color: styles.textColor}}>Quét</Text>
-  </View>
-  );
-}
-
 export default class Routes extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
   }
 
-  componentDidMount(){
-  }
+  componentDidMount() {}
 
-  componentWillUnmount() {
-    
-  }
+  componentWillUnmount() {}
 
   render() {
+    const { TaoPhieuGiaoHangTabIcon, DanhSachPhieuGiaoHangTabIcon, QuetGiaoXongTabIcon } = IconsGiaoHang;
     return (
       <Provider store={store}>
         <RouterRedux>
           <Scene key="root">
-
             {/* Route not auth */}
             <Scene key="login" navBar={navBarCustom} hideNavBar={false} component={LoginContainer} title="Đăng nhập" initial={true} />
             <Scene key="signup" component={SignupContainer} title="Signup" />
@@ -117,17 +61,14 @@ export default class Routes extends React.Component {
             <Scene key="kho_nhapKhoKhacAo" navBar={navBarCustom} hideNavBar={false} component={NhapKhoKhacAoContainer} title="Kho Khác Ảo" />
 
             <Scene key="kho_nhapKhoThanhPham" navBar={navBarCustom} hideNavBar={false} component={NhapKhoThanhPhamContainer} title="Kho Thành Phẩm" />
-            
-
 
             {/* <Scene key="kho_giaoHang" navBar={navBarCustom} hideNavBar={false} component={GiaoHangContainer} title="Giao Hàng" /> */}
             {/* GIAO HANG TAB */}
-            <Scene key='kho_giaoHang' showLabel={false} tabs={true} navBar={navBarCustom} hideNavBar={false} title='Giao Hàng'>
-              <Scene key='kho_giaoHang_taoPhieuGiaoHang'    component={TaoPhieuGHContainer} hideNavBar={true} title='Tạo Hành Trình' initial={true} icon={TaoPhieuGiaoHangTabIcon} />
-              <Scene key='kho_giaoHang_danhSachPhieu'   component={DanhSachPhieuGHContainer}  hideNavBar={true} title='Danh sách' icon={DanhSachPhieuGiaoHangTabIcon} />
-              <Scene key='home_giaoHang_quetGiaoXong' component={ScanCompletePhieuGHContainer}  hideNavBar={true} title={'Quét'} icon={QuetGiaoXongTabIcon} />
+            <Scene key="kho_giaoHang" showLabel={false} tabs={true} navBar={navBarCustom} hideNavBar={false} title="Giao Hàng">
+              <Scene key="kho_giaoHang_taoPhieuGiaoHang" component={TaoPhieuGHContainer} hideNavBar={true} title="Tạo Hành Trình" initial={true} icon={TaoPhieuGiaoHangTabIcon} />
+              <Scene key="kho_giaoHang_danhSachPhieu" component={DanhSachPhieuGHContainer} hideNavBar={true} title="Danh sách" icon={DanhSachPhieuGiaoHangTabIcon} />
+              <Scene key="home_giaoHang_quetGiaoXong" component={ScanCompletePhieuGHContainer} hideNavBar={true} title={'Quét'} icon={QuetGiaoXongTabIcon} />
             </Scene>
-
 
             {/* TABs Containner */}
             {/* <Scene key='home' showLabel={false} tabs={true} navBar={navBarCustom} hideNavBar={false} title='Trang Chủ'>

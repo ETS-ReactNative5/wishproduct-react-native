@@ -1,4 +1,3 @@
-// module.exports = [
 const apiDefine = [
   {
     service: 'app',
@@ -268,6 +267,4 @@ const apiDefine = [
 
 ];
 
-module.exports = {
-  apiDefine,
-};
+export default apiDefine;

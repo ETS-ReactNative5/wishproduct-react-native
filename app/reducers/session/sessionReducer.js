@@ -1,4 +1,4 @@
-import * as types from './../../actions/session/actionsTypes';
+import * as ACTIONS from './../../actions/session/actionsTypes';
 
 const initialState = {
   restoring: false,
@@ -11,11 +11,11 @@ const initialState = {
 
 const sessionReducer = (state = initialState, action) => {
   switch (action.type) {
-    case types.SESSION_RESTORING:
+    case ACTIONS.SESSION_RESTORING:
       return { ...state, restoring: true };
-    case types.SESSION_LOADING:
+    case ACTIONS.SESSION_LOADING:
       return { ...state, restoring: false, loading: true, error: null };
-    case types.SESSION_SUCCESS:
+    case ACTIONS.SESSION_SUCCESS:
       return {
         ...state,
         restoring: false,
@@ -25,7 +25,7 @@ const sessionReducer = (state = initialState, action) => {
         logged: true,
         registered: null
       };
-    case types.SIGNUP_SUCCESS:
+    case ACTIONS.SIGNUP_SUCCESS:
       return {
         ...state,
         restoring: false,
@@ -35,7 +35,7 @@ const sessionReducer = (state = initialState, action) => {
         logged: null,
         registered: true
       };
-    case types.SESSION_ERROR:
+    case ACTIONS.SESSION_ERROR:
       return {
         ...state,
         restoring: false,
@@ -45,7 +45,7 @@ const sessionReducer = (state = initialState, action) => {
         logged: null,
         registered: null
       };
-    case types.SESSION_LOGOUT:
+    case ACTIONS.SESSION_LOGOUT:
       return initialState;
     default:
       return state;

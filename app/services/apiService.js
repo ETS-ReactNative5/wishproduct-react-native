@@ -2,19 +2,22 @@ import axios from 'axios';
 import * as _ from 'lodash';
 import { ToastAndroid } from 'react-native';
 import { API_URL, CDN_URL } from './../enviroments/env.js';
-import { apiDefine } from './../api_define';
+import apiDefine from './../api_define';
+const defaultHeaders = {
+  'Content-Type': 'application/json'
+};
 let instance = axios.create({
   baseURL: API_URL,
   headers: {
     'Content-Type': 'application/json',
     // 'Access-Control-Max-Age': 1728000,
     // 'Authorization': AppService.getToken(),
-    Accept: 'application/json',
+    Accept: 'application/json'
   }
 });
 
 instance.interceptors.request.use(
-  function (config) {
+  function(config) {
     console.log('');
     console.log('');
     console.log('');
@@ -22,14 +25,14 @@ instance.interceptors.request.use(
     console.log(config);
     return config;
   },
-  function (error) {
+  function(error) {
     return Promise.reject(error);
   }
 );
 
 // Add a response interceptor
 instance.interceptors.response.use(
-  function (res) {
+  function(res) {
     // Any status code that lie within the range of 2xx cause this function to trigger
     // Do something with response data
     let newData = res && res.data ? res.data : res;
@@ -37,7 +40,7 @@ instance.interceptors.response.use(
     console.log(`---------------------END--------------------`);
     return newData;
   },
-  function (error) {
+  function(error) {
     // Any status codes that falls outside the range of 2xx cause this function to trigger
     // Do something with response error
     if (error && error.response) {
@@ -59,8 +62,7 @@ instance.interceptors.response.use(
   }
 );
 
-
-let apiGenerator = (instance) => {
+let apiGenerator = instance => {
   const mappingFunction = (items = [], host) => {
     for (let index in items) {
       let api = items[index];
@@ -80,11 +82,7 @@ let apiGenerator = (instance) => {
             url: url,
             method: item.method,
             body: params,
-            headers: typeof headers === "object" ? _.extend(headers, {
-              "Content-Type": "application/json"
-            }) : {
-              "Content-Type": "application/json"
-            },
+            headers: typeof headers === 'object' ? _.extend(headers, defaultHeaders) : defaultHeaders
           };
           return requestFn(options);
         };
@@ -92,13 +90,13 @@ let apiGenerator = (instance) => {
 
       for (let index3 in api.children) {
         let children = api.children[index3];
-        instance[api.service] = mappingFunction(api.children, prefix)
+        instance[api.service] = mappingFunction(api.children, prefix);
       }
     }
     return instance;
-  }
+  };
   return mappingFunction(apiDefine, API_URL);
-}
+};
 
 let qsParam = (params = {}) => {
   params = params || {};
@@ -111,7 +109,7 @@ let qsParam = (params = {}) => {
   }
   url = url.replace(/&$/, '');
   return url;
-}
+};
 
 let requestFn = (options = {}) => {
   return new Promise((resolve, reject) => {
@@ -133,13 +131,15 @@ let requestFn = (options = {}) => {
       url: options.url,
       data: options.body || options.data,
       body: options.body || options.data,
-      timeout: 60000,
-    }).then((result) => {
-      return resolve(result);
-    }).catch((error) => {
-      return reject(error);
-    });
+      timeout: 60000
+    })
+      .then(result => {
+        return resolve(result);
+      })
+      .catch(error => {
+        return reject(error);
+      });
   });
-}
+};
 instance = apiGenerator(instance);
 export default instance;

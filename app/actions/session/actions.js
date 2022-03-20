@@ -1,16 +1,11 @@
 // import firebaseService from './../../enviroments/firebase';
 import apiService from './../../services/apiService';
-import * as types from './actionsTypes';
-import {
-  ToastAndroid,
-  Platform,
-  AlertIOS,
-} from 'react-native';
-import axios from 'axios';
+import * as ACTIONS from './actionsTypes';
+import { ToastAndroid, Platform, AlertIOS } from 'react-native';
 
 function notifyMessage(msg) {
   if (Platform.OS === 'android') {
-    ToastAndroid.show(msg, ToastAndroid.LONG)
+    ToastAndroid.show(msg, ToastAndroid.LONG);
   } else {
     AlertIOS.alert(msg);
   }
@@ -31,7 +26,8 @@ function notifyMessage(msg) {
 
 export const loginUser = (email, password) => dispatch => {
   dispatch(sessionLoading());
-  apiService.post('/public/authenticate', {
+  apiService
+    .post('/public/authenticate', {
       username: email,
       password: password
     })
@@ -43,13 +39,13 @@ export const loginUser = (email, password) => dispatch => {
       user.permissions = permissions;
       apiService.defaults.headers['Authorization'] = `Bearer ${Authorization}`;
       apiService.defaults.headers.common['Authorization'] = `Bearer ${Authorization}`;
-      // alert(JSON.stringify(Authorization)); 
-      // alert(JSON.stringify(permissions)); 
+      // alert(JSON.stringify(Authorization));
+      // alert(JSON.stringify(permissions));
       // alert(JSON.stringify(user));
       dispatch(sessionSuccess(user));
     })
     .catch(e => {
-      dispatch(sessionError(e && e.indexOf && e.indexOf('Unauthorized')>-1 ? `Username or password is invalid` : e));
+      dispatch(sessionError(e && e.indexOf && e.indexOf('Unauthorized') > -1 ? `Username or password is invalid` : e));
       notifyMessage(JSON.stringify(e));
     });
   // firebaseService
@@ -92,28 +88,28 @@ export const logoutUser = () => dispatch => {
 };
 
 // const sessionRestoring = () => ({
-//   type: types.SESSION_RESTORING
+//   type: ACTIONS.SESSION_RESTORING
 // });
 
 const sessionLoading = () => ({
-  type: types.SESSION_LOADING
+  type: ACTIONS.SESSION_LOADING
 });
 
 const sessionSuccess = user => ({
-  type: types.SESSION_SUCCESS,
+  type: ACTIONS.SESSION_SUCCESS,
   user
 });
 
 const signupSuccess = user => ({
-  type: types.SIGNUP_SUCCESS,
+  type: ACTIONS.SIGNUP_SUCCESS,
   user
 });
 
 const sessionError = error => ({
-  type: types.SESSION_ERROR,
+  type: ACTIONS.SESSION_ERROR,
   error
 });
 
 const sessionLogout = () => ({
-  type: types.SESSION_LOGOUT
+  type: ACTIONS.SESSION_LOGOUT
 });
